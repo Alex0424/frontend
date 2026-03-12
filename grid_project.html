@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Painting Project</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      background-color: black;
+      gap: 9px;
+    }
+    .item {
+      background-color: #F0F1EC;
+    }
+    .left_up {
+      background-color: #E72F24;
+    }
+    .middle_left {
+      grid-column: span 3;
+    }
+    .down_left {
+      grid-row: span 2;
+    }
+    .middle {
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .middle_up_right {
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .middle_down_1 {
+      background-color: #F9D01E;
+    }
+    .middle_down_2 {
+      background-color: #232629;
+    }
+
+    .down_right {
+      grid-row: span 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item left_up"></div>
+    <div class="item middle_left"></div>
+    <div class="item down_left"></div>
+    <div class="item middle"></div>
+    <div class="item middle_up_right"></div>
+    <div class="item down_right"></div>
+    <div class="item middle_right"></div>
+    <div class="item middle_down_1"></div>
+    <div class="item middle_down_2"></div>
+  </div>
+</body>
+
+</html>
+
